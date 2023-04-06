@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 credentials/
-TaskMate/settings.py
+TaskMate/TaskMate/settings.py
