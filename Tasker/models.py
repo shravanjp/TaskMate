@@ -17,7 +17,7 @@ class ToDoList(models.Model):
     content = models.TextField(blank=True)
     created_time = models.DateField(default=timezone.now().strftime("%d-%m-%y")) 
     due_time = models.DateField(default=timezone.now().strftime("%d-%m-%y")) 
-    category = models.ForeignKey(Category,default="general")
+    category = models.ForeignKey(Category,default="general",on_delete=models.CASCADE)
 
     class Meta:
         ordering = ["-created_time"]
