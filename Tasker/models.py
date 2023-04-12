@@ -12,6 +12,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class ToDoList(models.Model):
     title = models.CharField(max_length=250)
     content = models.TextField(blank=True)
